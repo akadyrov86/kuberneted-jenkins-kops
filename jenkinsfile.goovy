@@ -1,0 +1,9 @@
+node {
+  stage("Terraform init"){
+     sh "terraform init"
+  }
+  stage("Terrafom apply"){
+     sh "terraform apply -auto-approve"
+  }
+  
+}
